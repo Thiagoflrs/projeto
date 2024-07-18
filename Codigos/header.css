@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+:root {
+    --cor-pag: rgb(136, 17, 17);
+    --cor-menu: white;
+    --cor-nav: black;
+}
+
+body {
+    width: 1835px;
+    height: 2400px;
+}
+
+#header {
+    width: 1835px;
+    background-color: var(--cor-nav);
+}
+
+header {
+    width: 1435px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    & img {
+        width: 120px;
+        height: 90px;
+    }
+    & h1 {
+        font-size: 18px;
+        color: var(--cor-menu)
+    }
+}
+
+.meio {
+    width: 660px;
+    height: 90px;
+    padding-top: 30px;
+    padding-left: 5px;
+    & input {
+        width: 650px;
+        height: 25px;
+        padding: 5px;
+    }
+
+    & ul {
+        list-style-type: none;
+        display: flex;
+        padding: 5px;
+        gap: 40px;
+        & a {
+            text-decoration: none;
+            color: var(--cor-nav);
+            font-size: 15px;
+            color: var(--cor-menu);
+        }
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-size: 16px;
+        }
+        & li:first-child {
+            font-size: 15px;
+            color: var(--cor-menu);
+        }
+        & li:first-child:hover {
+            font-size: 16px;
+        }
+
+        & .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        & .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            width: 100px;
+            height: 80px;
+        }
+        & .dropdown-content a {
+            display: inline-block;
+            color: black;
+            text-align: left;
+            padding: 10px;
+        }
+    }
+}
+
+.login {
+    width: 150px;
+    align-content: center;
+    color: var(--cor-menu);
+    & a {
+        display: block;
+        text-decoration: none;
+        color: var(--cor-menu);
+        font-size: 15px;
+    }
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        font-size: 16px;
+    }
+    .fa-solid.fa-check {
+        margin-left: 4px;
+        font-size: 12px;
+    }
+}
+
+.bottom {
+    height: 70px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 2px solid;
+    padding-left: 20vh;
+    .fa-solid.fa-user {
+        border-radius: 50%;
+        background-color: var(--cor-nav);
+        color: var(--cor-menu);
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        align-content: center;
+    }
+    .fa-solid.fa-user:hover {
+        background-color: var(--cor-pag);
+    }
+
+    & a {
+        display: block;
+        text-decoration: none;
+        color: var(--cor-nav);
+        padding-top: 5px;
+        font-size: 13px;
+    }
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        font-size: 14px;
+    }
+
+}
