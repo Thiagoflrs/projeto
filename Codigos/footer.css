@@ -1,0 +1,43 @@
+:root {
+    --cor-pag: rgb(136, 17, 17);
+    --cor-menu: white;
+    --cor-nav: black;
+}
+
+footer {
+    background-color: var(--cor-pag);
+    width: 1835px;
+    height: 380px;
+    font-size: 16px;
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer img {
+    width: 320px;
+    height: 230px;
+    align-self: center;
+}
+
+footer a {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    align-content: center;
+    left: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+

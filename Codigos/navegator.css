@@ -1,0 +1,124 @@
+:root {
+    --cor-pag: rgb(136, 17, 17);
+    --cor-menu: white;
+    --cor-nav: black;
+}
+
+.produtos {
+    width: 1535px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    .lateral {
+        width: 380px;
+        padding-top: 15px;
+        text-align: center;
+        & .fa-solid.fa-certificate {
+            margin-right: 5px;
+        }
+        & h1 {
+            text-align: left;
+            padding-top: 5px;
+        }
+
+    }
+    .estoque {
+        width: 1154px;
+        padding-left: 10px;
+        & .ordenar {
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            & h5 {
+                color: gray;
+            }
+        }
+        & .filtro {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            & select {
+                width: 110px;
+                height: 25px;
+                border-radius: 2px;
+                & option {
+                    color: var(--cor-pag);
+                }
+            }
+        }
+      
+    }
+}
+
+.cards {
+    display: flex;
+    gap: 34px;
+    padding: 10px 0 15px;
+    & .card {
+        height: 265px;
+        width: 200px;
+        border: 1px solid gray;
+        & .fa-regular.fa-heart { /*Coração*/
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+        & .fa-regular.fa-heart:hover {
+            color: var(--cor-pag);
+        }
+        & img {
+            width: 200px;
+            height: 200px;
+        }
+        & p {
+            font-size: 14px;
+            padding: 2px;
+        }
+        & i {
+            font-size: 14px;
+            padding-top: 2px;
+        }
+        & .fa-solid.fa-star { /*Estela cheia*/
+            color: gold;
+            font-size: 14px;
+        }
+        & .fa-solid.fa-star:hover { /*Hover estrela cheia*/
+            font-size: 16px;
+        }
+        & .fa-regular.fa-star-half-stroke { /*Metade estrela*/
+            color: gold;
+            font-size: 14px;
+        }
+        & .fa-regular.fa-star-half-stroke:hover { /*Hover metade estrela*/
+            font-size: 16px;
+        }
+        & .fa-regular.fa-star { /*Estrela vazia*/
+            font-size: 14px;
+            color: gold;
+        }
+        & .fa-regular.fa-star:hover { /*Hover estrela vazia*/
+            font-size: 16px;
+        }
+        & .nota {
+            font-size: 12px;
+            color: gray;
+        }
+        & .nota:hover {
+            font-size: 14px;
+        }
+        & .logocima {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            margin-left: 8.7rem;
+            margin-top: -2rem;
+        }
+    }
+}
+
+
